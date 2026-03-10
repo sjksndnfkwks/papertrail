@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <meta name="google-site-verification" content="K14cvtc6DkrPkrdUxtIDuYd2VJbtCgDFE_QF_lFliWg" />
   <title>PaperTrail - PDF 智能伴读与笔记</title>
-  <link rel="icon" href="icon_128.png" type="image/png">
+  <link rel="icon" href="logo.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -28,7 +28,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <div class="flex-shrink-0 flex items-center gap-2">
-          <img src="icon_128.png" alt="PaperTrail Logo" class="w-8 h-8 rounded-lg shadow-sm border border-gray-100">
+          <img src="logo.png" alt="PaperTrail Logo" class="w-8 h-8 rounded-lg shadow-sm border border-gray-100">
           <span class="font-bold text-xl tracking-tight text-gray-900">PaperTrail</span>
         </div>
         <div>
@@ -41,35 +41,54 @@
   </nav>
 
   <section class="pt-32 pb-20 px-4 text-center">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
-        把厚书读薄，<br class="hidden md:block" />
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">把薄页读透。</span>
-      </h1>
-      <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-        专注“逐页精读”与“知识沉淀”的 Chrome 侧边栏 AI 伴读工具。拒绝囫囵吞枣的全文总结，陪你一页一页拆解硬核知识。
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-        <a href="#install" class="bg-brand text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-brandHover transition shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
-          <span>📥 免费下载 v1.0 (ZIP)</span>
-        </a>
-        <a href="https://modelscope.cn/my/myaccesstoken" target="_blank" class="bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-50 transition shadow-sm flex items-center justify-center gap-2">
-          <span>🔑 获取免费 API Key</span>
-        </a>
-      </div>
-
-      <div class="relative mx-auto w-full max-w-5xl rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
+    <div class="relative mx-auto w-full max-w-5xl rounded-2xl shadow-2xl overflow-hidden border border-gray-200 bg-white mb-16">
         <div class="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
           <div class="w-3 h-3 rounded-full bg-red-400"></div>
           <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
           <div class="w-3 h-3 rounded-full bg-green-400"></div>
-          <div class="text-xs text-gray-400 ml-2 font-mono">PaperTrail - 演示演示</div>
+          <div class="text-xs text-gray-400 ml-2 font-mono flex-1 text-left">PaperTrail - 沉浸式伴读工作台</div>
         </div>
-        <div class="aspect-video bg-gray-50 flex items-center justify-center">
-          <p class="text-gray-400 font-medium">✨ 请在此处替换为你的高质量产品演示 GIF 图 ✨</p>
-          </div>
+        <div class="bg-gray-50 flex items-center justify-center relative group">
+          <img src="figures/demo-main.jpg" alt="PaperTrail 全景工作台" class="w-full h-auto object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+        </div>
       </div>
-    </div>
+
+      <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+        
+        <div class="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+          <h3 class="text-lg font-bold text-gray-800 mb-1">📘 沉浸伴读</h3>
+          <p class="text-sm text-gray-500 mb-4">双轨制排版，完美融合 AI 总结与私人笔记。</p>
+          <div class="flex-1 overflow-hidden rounded-xl border border-gray-200 bg-gray-50 flex items-start justify-center">
+            <img src="figures/demo-sidebar.png" alt="侧边栏细节" class="w-full h-auto object-contain" loading="lazy">
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+          <h3 class="text-lg font-bold text-gray-800 mb-1">📦 知识导出</h3>
+          <p class="text-sm text-gray-500 mb-4">按需组合总结与笔记，一键提取纯净 Markdown。</p>
+          <div class="flex-1 overflow-hidden rounded-xl border border-gray-200 bg-gray-50 flex items-start justify-center">
+            <img src="figures/demo-export.png" alt="导出功能" class="w-full h-auto object-contain" loading="lazy">
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+          <h3 class="text-lg font-bold text-gray-800 mb-1">⚡️ 秒级回溯</h3>
+          <p class="text-sm text-gray-500 mb-4">二次打开同一文档，历史记录 0 毫秒瞬间上墙。</p>
+          <div class="flex-1 overflow-hidden rounded-xl border border-gray-200 bg-gray-50 flex items-start justify-center">
+            <img src="figures/demo-history.png" alt="历史记录" class="w-full h-auto object-contain" loading="lazy">
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+          <h3 class="text-lg font-bold text-gray-800 mb-1">🔐 隐私配置</h3>
+          <p class="text-sm text-gray-500 mb-4">纯本地 BYOK 架构，支持切换不同大模型。</p>
+          <div class="flex-1 overflow-hidden rounded-xl border border-gray-200 bg-gray-50 flex items-start justify-center">
+            <img src="figures/demo-settings.png" alt="配置界面" class="w-full h-auto object-contain" loading="lazy">
+          </div>
+        </div>
+
+      </div>
   </section>
 
   <section id="features" class="py-20 bg-white">
